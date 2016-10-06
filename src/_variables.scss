@@ -1,0 +1,10 @@
+
+
+$main-color: 	#3a4154 !default;
+$second-color: #2e364b !default;
+
+$main-color: #3A425A;
+$second-color: #2e3959;
+$complementary-color: #f3a335;
+$bg-color: #fff;
+$text-color:  darken(desaturate($main-color, 80%), 10%);
