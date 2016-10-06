@@ -35,15 +35,10 @@ class HomePage extends Component {
         });
     }
 
-        render() {
+    render() {
         // for future use, to change components
-        return ( <
-            div dangerouslySetInnerHTML = {
-                {
-                    __html: uglyHTML
-                }
-            }
-            />
+        return ( 
+            <div dangerouslySetInnerHTML={{ __html: uglyHTML }} />
         );
     }
 }

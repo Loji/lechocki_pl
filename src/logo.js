@@ -1,4 +1,4 @@
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+const logo = `<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
 								xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="120px" viewBox="0 0 50 41.055665" id="logo">
 					<g id="layer1" transform="translate(-225.60622,-319.90581)">
 						<path id="path5069" class="letter" d="m 225.76247,330.97711 q 0,-0.2539 0.17578,-0.41992 0.17578,-0.17578 0.42969,-0.17578 0.2539,0 0.41992,0.17578 0.17578,0.16602 0.17578,0.41992 0,1.40625 0.99609,2.41211 1.02539,0.99609 2.41211,0.99609 1.41602,0 2.40235,-0.99609 1.00585,-0.99609 1.00585,-2.41211 l 0,-10.41015 q 0,-0.25391 0.17579,-0.42969 0.17578,-0.17578 0.41992,-0.17578 0.2539,0 0.42969,0.17578 0.17578,0.17578 0.17578,0.42969 l 0,10.41015 q 0,1.91406 -1.34766,3.27149 -1.35742,1.33789 -3.26172,1.33789 -1.9043,0 -3.26172,-1.33789 -1.34765,-1.37696 -1.34765,-3.27149 z"
@@ -32,4 +32,6 @@
 						<path id="line-left" class="line" d="m 316.57045,360 -1500,0" />
 						<path id="line-right" class="line" d="m 316.38864,360 1500,0" />
 					</g>
-				</svg>
+				</svg>`;
+
+export default logo;
