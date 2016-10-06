@@ -62,9 +62,9 @@ const uglyHTML = `
 
 						</div>
 						<ul>
-							<li>Laravel</li>
 							<li>AngularJS</li>
 							<li>ReactJS</li>
+							<li>Laravel</li>
 							<li>Wordpress</li>
 							<li>Prestashop</li>
 							<li>NodeJS</li>
