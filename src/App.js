@@ -10,9 +10,8 @@ class App extends Component {
       <div className="App">
         <div className="content">
           <div className="title" dangerouslySetInnerHTML={{ __html: logo }} >
-            
           </div>
-          <HomePage />
+          {this.props.children}
         </div>
       </div>
     );
