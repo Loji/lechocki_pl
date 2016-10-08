@@ -8,6 +8,9 @@ import anime from 'animejs';
 
 class App extends Component {
   componentDidMount() {
+    if(typeof requestAnimationFrame === 'undefined') {
+      this.fixRequestAnimationFrame();
+    }
 
     var setDashoffset = function (el) {
       var l = el.getTotalLength();
@@ -33,13 +36,28 @@ class App extends Component {
     });
   }
 
+  //hotfix for browsers that have no normal requestAnimationFrame function
+  fixRequestAnimationFrame() {
+    window.requestAnimationFrame = () => (
+        window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (/* function */ callback) {
+          window.setTimeout(callback, 1000 / 60);
+        }
+      );
+    
+  }
+
   render() {
     return (
       <div className="App">
         <div className="content">
           <div className="title" dangerouslySetInnerHTML={{ __html: logo }} >
           </div>
-     			<div className="description">
+          <div className="description">
             {this.props.children}
           </div>
         </div>

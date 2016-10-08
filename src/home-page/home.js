@@ -37,8 +37,8 @@ const uglyHTML = `
 							</svg>
 						</div>
 						<ul>
-							<li>PHP 5.*, 7</li>
 							<li>JavaScript</li>
+							<li>PHP 5.*, 7</li>							
 							<li>Java</li>
 							<li>Python 2, 3</li>
 							<li>HTML5</li>

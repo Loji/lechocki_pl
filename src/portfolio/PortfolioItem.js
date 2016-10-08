@@ -10,7 +10,7 @@ class PortfolioItem extends Component {
 
     render() {
         return (
-            <div>
+            <div className="portfolioItem">
                 <img src={this.props.thumbnail} />
                 <h5>{this.props.name}</h5>
             </div>

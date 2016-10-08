@@ -6,6 +6,9 @@ import {Request} from 'request';
 
 import PortfolioItem from './PortfolioItem';
 
+// styles 
+import './Portfolio.scss';
+
 class Portfolio extends Component {
 
     constructor(state) {
@@ -31,7 +34,7 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div>
+            <div className="portfolio">
                 {this.state.portfolioItems.map((portfolioItem) => (
                     <PortfolioItem
                         name={portfolioItem.title}
