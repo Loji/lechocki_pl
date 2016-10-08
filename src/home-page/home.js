@@ -1,8 +1,5 @@
 const uglyHTML = `
 	<div>
-		
-			<div class="description">
-
 				<p>I'm a passionate web developer, system administrator and graphic designer.</p>
 				<p>I have 2,5 years of professional experience in work for end client and with external teams that outsource work. My main task at work was creating complete, secure websites and shops in collaboration with graphics designers. I also work on web applications
 					built with Laravel, Kohana, Yii or some custom CMS.</p>
@@ -102,7 +99,6 @@ const uglyHTML = `
 					<li><i class="fa fa-codepen" aria-hidden="true"></i> <a href="https://codepen.io/Loji/" target="_blank" rel="noopener noreferrer">CodePen</a></li>
 				</ul>
 			</div>
-		</div>
 	</div>`;
 
 	export default uglyHTML;
