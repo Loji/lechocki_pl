@@ -39,6 +39,7 @@ class Portfolio extends Component {
                     <PortfolioItem
                         name={portfolioItem.title}
                         thumbnail={portfolioItem.image}
+                        description={portfolioItem.description}
                         />
                 )) }
 
