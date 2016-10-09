@@ -1,0 +1,106 @@
+@import '../variables';
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity 1.3s ease;
+    opacity: 0;
+}
+
+.portfolioItem {
+    @media(max-width: 920px) {
+        margin: auto; 
+        max-width: 512px;
+    }
+    @media(min-width: 920px) {
+        width: 50%;
+    }
+    position: relative;
+    padding: 1rem;
+    .photo {
+        cursor: pointer; 
+    }
+    img {
+        max-width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+    h5 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(#000, 0.8);
+        padding: 1em;
+        margin: 1rem;
+        z-index: 11;
+    }
+    &.active {
+        z-index: 101;
+    }
+    &:not(.active) {
+        animation-name: zindex-remove;
+        animation-duration: 6s;
+    }
+    .description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+        background: rgba(#000, 0.8);
+        padding: 1em; 
+        margin: 1rem;
+        > span {
+            opacity: 0.2;
+        }
+        > div {
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 0.4rem;
+            margin-bottom: 0.4rem;
+            color: #ccc;
+            a {
+                color: #ccc;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            .trait {
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &:nth-child(2n-1) {
+        &.active {
+            .description {
+                transform: translateY(100%);
+                @media(min-width: 920px) {
+                    transform: translateX(100%);
+                }
+                @media(min-width: 1715px) {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+    &:nth-child(2n) {
+        &.active {
+            .description {
+                transform: translateY(100%);
+                @media(min-width: 920px) {
+                    transform: translateX(-100%);
+                }
+                @media(min-width: 1715px) {
+                    transform: translateX(100%);
+                }
+            }
+        }
+    }
+}
+
+@keyframes zindex-remove {
+    0% {z-index: 100;}
+    99% {z-index: 100;}
+    100% {z-index: auto;}
+}

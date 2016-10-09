@@ -1,4 +1,32 @@
-@import "../node_modules/node.normalize.scss/normalize";
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+* {
+	box-sizing: border-box;
+}
+
 @import "variables";
 html {
 	max-width  : 100%;
@@ -9,6 +37,7 @@ html {
 	line-height: 1.66;
 	position   : relative;
 	min-height : 100vh;
+	padding-bottom: 5rem;
 	&:before {
 		z-index   : -1;
 		content   : " ";
@@ -30,6 +59,7 @@ html {
 		&:before {
 			opacity: 1;
 		}
+		.portfolio,
 		.skills {
 			opacity: 1;
 		}
@@ -171,7 +201,7 @@ path {
 		top       : -999px;
 		left      : -9999px;
 		right     : -9999px;
-		bottom    : 0;
+		bottom    : 7px;
 		z-index   : -1;
 		content   : " ";
 		background: $bg-color;
@@ -215,5 +245,30 @@ ul {
 	}
 	li {
 		padding-bottom: 3px;
+	}
+}
+
+.menu {
+	position: fixed;
+	right: 0; 
+	left: 0;
+	bottom: 0;
+	text-align: right;
+	padding: 1rem 1rem;
+	z-index: 1000; 
+	background: rgba(#000, 0.6);
+	a {
+		background: $complementary-color;
+		color: rgba($main-color, 1);
+		text-transform: uppercase;
+		text-decoration: none;
+		margin-left: 0.5em; 
+		padding: 0.8em 1em;
+		transition: all 0.3s ease; 
+		font-weight: 700;
+		&:hover,
+		&.active {
+			background: darken($complementary-color, 15);
+		}
 	}
 }
