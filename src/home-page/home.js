@@ -72,7 +72,6 @@ const uglyHTML = `
 
 				<p>I'm currently open for freelancing work.</p>
 
-				<p>You can check out my portfolio at <a href="https://arkakodera.pl/portfolio/" target="_blank" title="arkakodera.pl">https://arkakodera.pl/portfolio/</a></p>
 				<hr/> Contact me
 				<ul>
 					<li>
