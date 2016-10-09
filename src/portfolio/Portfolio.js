@@ -23,7 +23,6 @@ class Portfolio extends Component {
         let serverRequest = require('request');
         serverRequest('https://arkakodera.pl/posts/', function (error, response, body) {
             if (!error && response.statusCode == 200) {
-                console.log(body) // Show the HTML for the Google homepage.
                 this.setState({
                     portfolioItems: JSON.parse(body),
                 })
