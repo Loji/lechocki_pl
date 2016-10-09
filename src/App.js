@@ -3,6 +3,7 @@ import logo from './logo.js';
 import './App.scss';
 
 import HomePage from './home-page/HomePage.js';
+import Menu from './Menu.js';
 
 import anime from 'animejs';
 
@@ -58,6 +59,7 @@ class App extends Component {
           <div className="description">
             {this.props.children}
           </div>
+          <Menu location={this.props.location} />
         </div>
       </div>
     );
