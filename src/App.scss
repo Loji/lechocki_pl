@@ -23,6 +23,10 @@
   to { transform: rotate(360deg); }
 }
 
+* {
+	box-sizing: border-box;
+}
+
 @import "variables";
 html {
 	max-width  : 100%;
@@ -54,6 +58,7 @@ html {
 		&:before {
 			opacity: 1;
 		}
+		.portfolio,
 		.skills {
 			opacity: 1;
 		}
