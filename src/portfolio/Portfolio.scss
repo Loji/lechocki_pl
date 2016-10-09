@@ -7,6 +7,10 @@
 }
 
 .portfolioItem {
+    @media(max-width: 920px) {
+        margin: auto; 
+        max-width: 512px;
+    }
     @media(min-width: 920px) {
         width: 50%;
     }
