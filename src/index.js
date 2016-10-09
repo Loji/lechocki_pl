@@ -12,8 +12,7 @@ ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={HomePage} />
-      <Route path="/portfolio" component={Portfolio}>
-      </Route>
+      <Route path="/portfolio" component={Portfolio} />
     </Route>
   </Router>,
   document.getElementById('root')
