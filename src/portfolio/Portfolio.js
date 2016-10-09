@@ -35,8 +35,9 @@ class Portfolio extends Component {
     render() {
         return (
             <div className="portfolio">
-                {this.state.portfolioItems.map((portfolioItem) => (
+                {this.state.portfolioItems.map((portfolioItem, index) => (
                     <PortfolioItem
+                        key={index}
                         name={portfolioItem.title}
                         thumbnail={portfolioItem.image}
                         description={portfolioItem.description}
