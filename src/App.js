@@ -39,12 +39,14 @@ class App extends Component {
   //hotfix for browsers that have no normal requestAnimationFrame function
   fixRequestAnimationFrame() {
     window.requestAnimationFrame = () => (
+        window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
         function (/* function */ callback) {
           window.setTimeout(callback, 1000 / 60);
         }
       );
+
   }
 
   render() {
