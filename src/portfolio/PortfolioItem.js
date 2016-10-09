@@ -21,7 +21,7 @@ var PortfolioItem = React.createClass({
     render: function() {
         return (
             <div className={ this.state.clicked ? 'active portfolioItem' : 'portfolioItem' }>
-                <div onClick={this.handleClick}>
+                <div className="photo" onClick={this.handleClick}>
                     <img src={this.props.thumbnail} />
                     <h5>{this.props.name}</h5>
                 </div>
